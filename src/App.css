@@ -1,0 +1,97 @@
+:root {
+  --br: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 15rem 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(244, 38%, 16%);
+  border-radius: var(--br);
+  height: 42rem;
+  width: 80%;
+}
+
+.card__content {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.card__content--1 {
+  padding: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card__data {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  margin-top: 6rem;
+}
+
+.card__data div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__content--2 {
+  position: relative;
+  height: 100%;
+}
+
+.card__color {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 var(--br) var(--br) 0;
+  background: rgba(136, 46, 192, 0.6);
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.card__img {
+  height: 100%;
+}
+
+.card__img img {
+  border-radius: 0 var(--br) var(--br) 0;
+  display: block;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+/* Typography */
+p,
+span {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stat__heading {
+  color: hsla(0, 0%, 100%, 0.6);
+}
